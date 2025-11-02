@@ -2,18 +2,27 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>265</width>
-    <height>378</height>
+    <height>439</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>265</width>
+    <height>439</height>
+   </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>265</width>
-    <height>378</height>
+    <height>439</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -30,7 +39,7 @@
    <property name="maximumSize">
     <size>
      <width>265</width>
-     <height>335</height>
+     <height>396</height>
     </size>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -68,11 +77,11 @@
        </widget>
       </item>
       <item>
-       <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1,1" columnstretch="1,1,1,1">
+       <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0" columnstretch="1,1,1,1" rowminimumheight="0,0,0,0,0,0,0">
         <property name="spacing">
          <number>1</number>
         </property>
-        <item row="0" column="0">
+        <item row="1" column="0">
          <widget class="QPushButton" name="pb7">
           <property name="minimumSize">
            <size>
@@ -98,241 +107,7 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="2">
-         <widget class="QPushButton" name="pb3">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>3</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="2">
-         <widget class="QPushButton" name="pb6">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>6</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QPushButton" name="pb5">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>5</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QPushButton" name="pb1">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="3">
-         <widget class="QPushButton" name="pbDivide">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>/</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QPushButton" name="pb2">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>2</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="2">
-         <widget class="QPushButton" name="pb9">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>9</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QPushButton" name="pb8">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>8</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="3">
-         <widget class="QPushButton" name="pbSubtract">
-          <property name="minimumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Helvetica</family>
-            <pointsize>14</pointsize>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
+        <item row="4" column="0">
          <widget class="QPushButton" name="pb4">
           <property name="minimumSize">
            <size>
@@ -358,8 +133,8 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="3">
-         <widget class="QPushButton" name="pbMultiply">
+        <item row="6" column="3">
+         <widget class="QPushButton" name="pbAdd">
           <property name="minimumSize">
            <size>
             <width>60</width>
@@ -380,12 +155,12 @@
            </font>
           </property>
           <property name="text">
-           <string>*</string>
+           <string>+</string>
           </property>
          </widget>
         </item>
-        <item row="3" column="0">
-         <widget class="QPushButton" name="pb0">
+        <item row="4" column="2">
+         <widget class="QPushButton" name="pb6">
           <property name="minimumSize">
            <size>
             <width>60</width>
@@ -406,11 +181,11 @@
            </font>
           </property>
           <property name="text">
-           <string>0</string>
+           <string>6</string>
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
+        <item row="6" column="1">
          <widget class="QPushButton" name="pbDot">
           <property name="minimumSize">
            <size>
@@ -436,7 +211,111 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="2">
+        <item row="6" column="0">
+         <widget class="QPushButton" name="pb0">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pb5">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pb8">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="pb3">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
          <widget class="QPushButton" name="pbEqual">
           <property name="minimumSize">
            <size>
@@ -462,8 +341,33 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="3">
-         <widget class="QPushButton" name="pbAdd">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pbC">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>C</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pb9">
           <property name="minimumSize">
            <size>
             <width>60</width>
@@ -484,7 +388,212 @@
            </font>
           </property>
           <property name="text">
-           <string>+</string>
+           <string>9</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="pb2">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pbDivide">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>÷</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="pbMultiply">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>x</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pb1">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QPushButton" name="pbSubtract">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pbBackspace">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>←</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pbPercent">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="pbCE">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>CE</string>
           </property>
          </widget>
         </item>
@@ -542,10 +651,7 @@
     <string>Exit</string>
    </property>
    <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <bold>false</bold>
-    </font>
+    <font/>
    </property>
   </action>
   <action name="menuCopy">

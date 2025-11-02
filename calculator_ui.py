@@ -24,8 +24,10 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(265, 378)
-        MainWindow.setMaximumSize(QSize(265, 378))
+        MainWindow.setEnabled(True)
+        MainWindow.resize(265, 439)
+        MainWindow.setMinimumSize(QSize(265, 439))
+        MainWindow.setMaximumSize(QSize(265, 439))
         icon = QIcon()
         icon.addFile(u"calculator-icon.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
@@ -33,8 +35,6 @@ class Ui_MainWindow(object):
         self.menuExit = QAction(MainWindow)
         self.menuExit.setObjectName(u"menuExit")
         font = QFont()
-        font.setPointSize(9)
-        font.setBold(False)
         self.menuExit.setFont(font)
         self.menuCopy = QAction(MainWindow)
         self.menuCopy.setObjectName(u"menuCopy")
@@ -52,7 +52,7 @@ class Ui_MainWindow(object):
         self.menuWebsite.setObjectName(u"menuWebsite")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.centralwidget.setMaximumSize(QSize(265, 335))
+        self.centralwidget.setMaximumSize(QSize(265, 396))
         self.verticalLayout_2 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout = QVBoxLayout()
@@ -84,79 +84,7 @@ class Ui_MainWindow(object):
         font2.setBold(False)
         self.pb7.setFont(font2)
 
-        self.gridLayout.addWidget(self.pb7, 0, 0, 1, 1)
-
-        self.pb3 = QPushButton(self.centralwidget)
-        self.pb3.setObjectName(u"pb3")
-        self.pb3.setMinimumSize(QSize(60, 60))
-        self.pb3.setMaximumSize(QSize(60, 60))
-        self.pb3.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb3, 2, 2, 1, 1)
-
-        self.pb6 = QPushButton(self.centralwidget)
-        self.pb6.setObjectName(u"pb6")
-        self.pb6.setMinimumSize(QSize(60, 60))
-        self.pb6.setMaximumSize(QSize(60, 60))
-        self.pb6.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb6, 1, 2, 1, 1)
-
-        self.pb5 = QPushButton(self.centralwidget)
-        self.pb5.setObjectName(u"pb5")
-        self.pb5.setMinimumSize(QSize(60, 60))
-        self.pb5.setMaximumSize(QSize(60, 60))
-        self.pb5.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb5, 1, 1, 1, 1)
-
-        self.pb1 = QPushButton(self.centralwidget)
-        self.pb1.setObjectName(u"pb1")
-        self.pb1.setMinimumSize(QSize(60, 60))
-        self.pb1.setMaximumSize(QSize(60, 60))
-        self.pb1.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb1, 2, 0, 1, 1)
-
-        self.pbDivide = QPushButton(self.centralwidget)
-        self.pbDivide.setObjectName(u"pbDivide")
-        self.pbDivide.setMinimumSize(QSize(60, 60))
-        self.pbDivide.setMaximumSize(QSize(60, 60))
-        self.pbDivide.setFont(font2)
-
-        self.gridLayout.addWidget(self.pbDivide, 0, 3, 1, 1)
-
-        self.pb2 = QPushButton(self.centralwidget)
-        self.pb2.setObjectName(u"pb2")
-        self.pb2.setMinimumSize(QSize(60, 60))
-        self.pb2.setMaximumSize(QSize(60, 60))
-        self.pb2.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb2, 2, 1, 1, 1)
-
-        self.pb9 = QPushButton(self.centralwidget)
-        self.pb9.setObjectName(u"pb9")
-        self.pb9.setMinimumSize(QSize(60, 60))
-        self.pb9.setMaximumSize(QSize(60, 60))
-        self.pb9.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb9, 0, 2, 1, 1)
-
-        self.pb8 = QPushButton(self.centralwidget)
-        self.pb8.setObjectName(u"pb8")
-        self.pb8.setMinimumSize(QSize(60, 60))
-        self.pb8.setMaximumSize(QSize(60, 60))
-        self.pb8.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb8, 0, 1, 1, 1)
-
-        self.pbSubtract = QPushButton(self.centralwidget)
-        self.pbSubtract.setObjectName(u"pbSubtract")
-        self.pbSubtract.setMinimumSize(QSize(60, 60))
-        self.pbSubtract.setMaximumSize(QSize(60, 60))
-        self.pbSubtract.setFont(font2)
-
-        self.gridLayout.addWidget(self.pbSubtract, 2, 3, 1, 1)
+        self.gridLayout.addWidget(self.pb7, 1, 0, 1, 1)
 
         self.pb4 = QPushButton(self.centralwidget)
         self.pb4.setObjectName(u"pb4")
@@ -164,39 +92,7 @@ class Ui_MainWindow(object):
         self.pb4.setMaximumSize(QSize(60, 60))
         self.pb4.setFont(font2)
 
-        self.gridLayout.addWidget(self.pb4, 1, 0, 1, 1)
-
-        self.pbMultiply = QPushButton(self.centralwidget)
-        self.pbMultiply.setObjectName(u"pbMultiply")
-        self.pbMultiply.setMinimumSize(QSize(60, 60))
-        self.pbMultiply.setMaximumSize(QSize(60, 60))
-        self.pbMultiply.setFont(font2)
-
-        self.gridLayout.addWidget(self.pbMultiply, 1, 3, 1, 1)
-
-        self.pb0 = QPushButton(self.centralwidget)
-        self.pb0.setObjectName(u"pb0")
-        self.pb0.setMinimumSize(QSize(60, 60))
-        self.pb0.setMaximumSize(QSize(60, 60))
-        self.pb0.setFont(font2)
-
-        self.gridLayout.addWidget(self.pb0, 3, 0, 1, 1)
-
-        self.pbDot = QPushButton(self.centralwidget)
-        self.pbDot.setObjectName(u"pbDot")
-        self.pbDot.setMinimumSize(QSize(60, 60))
-        self.pbDot.setMaximumSize(QSize(60, 60))
-        self.pbDot.setFont(font2)
-
-        self.gridLayout.addWidget(self.pbDot, 3, 1, 1, 1)
-
-        self.pbEqual = QPushButton(self.centralwidget)
-        self.pbEqual.setObjectName(u"pbEqual")
-        self.pbEqual.setMinimumSize(QSize(60, 60))
-        self.pbEqual.setMaximumSize(QSize(60, 60))
-        self.pbEqual.setFont(font2)
-
-        self.gridLayout.addWidget(self.pbEqual, 3, 2, 1, 1)
+        self.gridLayout.addWidget(self.pb4, 4, 0, 1, 1)
 
         self.pbAdd = QPushButton(self.centralwidget)
         self.pbAdd.setObjectName(u"pbAdd")
@@ -204,12 +100,147 @@ class Ui_MainWindow(object):
         self.pbAdd.setMaximumSize(QSize(60, 60))
         self.pbAdd.setFont(font2)
 
-        self.gridLayout.addWidget(self.pbAdd, 3, 3, 1, 1)
+        self.gridLayout.addWidget(self.pbAdd, 6, 3, 1, 1)
 
-        self.gridLayout.setRowStretch(0, 1)
-        self.gridLayout.setRowStretch(1, 1)
-        self.gridLayout.setRowStretch(2, 1)
-        self.gridLayout.setRowStretch(3, 1)
+        self.pb6 = QPushButton(self.centralwidget)
+        self.pb6.setObjectName(u"pb6")
+        self.pb6.setMinimumSize(QSize(60, 60))
+        self.pb6.setMaximumSize(QSize(60, 60))
+        self.pb6.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb6, 4, 2, 1, 1)
+
+        self.pbDot = QPushButton(self.centralwidget)
+        self.pbDot.setObjectName(u"pbDot")
+        self.pbDot.setMinimumSize(QSize(60, 60))
+        self.pbDot.setMaximumSize(QSize(60, 60))
+        self.pbDot.setFont(font2)
+
+        self.gridLayout.addWidget(self.pbDot, 6, 1, 1, 1)
+
+        self.pb0 = QPushButton(self.centralwidget)
+        self.pb0.setObjectName(u"pb0")
+        self.pb0.setMinimumSize(QSize(60, 60))
+        self.pb0.setMaximumSize(QSize(60, 60))
+        self.pb0.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb0, 6, 0, 1, 1)
+
+        self.pb5 = QPushButton(self.centralwidget)
+        self.pb5.setObjectName(u"pb5")
+        self.pb5.setMinimumSize(QSize(60, 60))
+        self.pb5.setMaximumSize(QSize(60, 60))
+        self.pb5.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb5, 4, 1, 1, 1)
+
+        self.pb8 = QPushButton(self.centralwidget)
+        self.pb8.setObjectName(u"pb8")
+        self.pb8.setMinimumSize(QSize(60, 60))
+        self.pb8.setMaximumSize(QSize(60, 60))
+        self.pb8.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb8, 1, 1, 1, 1)
+
+        self.pb3 = QPushButton(self.centralwidget)
+        self.pb3.setObjectName(u"pb3")
+        self.pb3.setMinimumSize(QSize(60, 60))
+        self.pb3.setMaximumSize(QSize(60, 60))
+        self.pb3.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb3, 5, 2, 1, 1)
+
+        self.pbEqual = QPushButton(self.centralwidget)
+        self.pbEqual.setObjectName(u"pbEqual")
+        self.pbEqual.setMinimumSize(QSize(60, 60))
+        self.pbEqual.setMaximumSize(QSize(60, 60))
+        self.pbEqual.setFont(font2)
+
+        self.gridLayout.addWidget(self.pbEqual, 6, 2, 1, 1)
+
+        self.pbC = QPushButton(self.centralwidget)
+        self.pbC.setObjectName(u"pbC")
+        self.pbC.setMinimumSize(QSize(60, 60))
+        self.pbC.setMaximumSize(QSize(60, 60))
+        font3 = QFont()
+        font3.setFamilies([u"Helvetica"])
+        font3.setPointSize(14)
+        self.pbC.setFont(font3)
+
+        self.gridLayout.addWidget(self.pbC, 0, 0, 1, 1)
+
+        self.pb9 = QPushButton(self.centralwidget)
+        self.pb9.setObjectName(u"pb9")
+        self.pb9.setMinimumSize(QSize(60, 60))
+        self.pb9.setMaximumSize(QSize(60, 60))
+        self.pb9.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb9, 1, 2, 1, 1)
+
+        self.pb2 = QPushButton(self.centralwidget)
+        self.pb2.setObjectName(u"pb2")
+        self.pb2.setMinimumSize(QSize(60, 60))
+        self.pb2.setMaximumSize(QSize(60, 60))
+        self.pb2.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb2, 5, 1, 1, 1)
+
+        self.pbDivide = QPushButton(self.centralwidget)
+        self.pbDivide.setObjectName(u"pbDivide")
+        self.pbDivide.setMinimumSize(QSize(60, 60))
+        self.pbDivide.setMaximumSize(QSize(60, 60))
+        self.pbDivide.setFont(font2)
+
+        self.gridLayout.addWidget(self.pbDivide, 1, 3, 1, 1)
+
+        self.pbMultiply = QPushButton(self.centralwidget)
+        self.pbMultiply.setObjectName(u"pbMultiply")
+        self.pbMultiply.setMinimumSize(QSize(60, 60))
+        self.pbMultiply.setMaximumSize(QSize(60, 60))
+        self.pbMultiply.setFont(font2)
+
+        self.gridLayout.addWidget(self.pbMultiply, 4, 3, 1, 1)
+
+        self.pb1 = QPushButton(self.centralwidget)
+        self.pb1.setObjectName(u"pb1")
+        self.pb1.setMinimumSize(QSize(60, 60))
+        self.pb1.setMaximumSize(QSize(60, 60))
+        self.pb1.setFont(font2)
+
+        self.gridLayout.addWidget(self.pb1, 5, 0, 1, 1)
+
+        self.pbSubtract = QPushButton(self.centralwidget)
+        self.pbSubtract.setObjectName(u"pbSubtract")
+        self.pbSubtract.setMinimumSize(QSize(60, 60))
+        self.pbSubtract.setMaximumSize(QSize(60, 60))
+        self.pbSubtract.setFont(font2)
+
+        self.gridLayout.addWidget(self.pbSubtract, 5, 3, 1, 1)
+
+        self.pbBackspace = QPushButton(self.centralwidget)
+        self.pbBackspace.setObjectName(u"pbBackspace")
+        self.pbBackspace.setMinimumSize(QSize(60, 60))
+        self.pbBackspace.setMaximumSize(QSize(60, 60))
+        self.pbBackspace.setFont(font3)
+
+        self.gridLayout.addWidget(self.pbBackspace, 0, 1, 1, 1)
+
+        self.pbPercent = QPushButton(self.centralwidget)
+        self.pbPercent.setObjectName(u"pbPercent")
+        self.pbPercent.setMinimumSize(QSize(60, 60))
+        self.pbPercent.setMaximumSize(QSize(60, 60))
+        self.pbPercent.setFont(font3)
+
+        self.gridLayout.addWidget(self.pbPercent, 0, 2, 1, 1)
+
+        self.pbCE = QPushButton(self.centralwidget)
+        self.pbCE.setObjectName(u"pbCE")
+        self.pbCE.setMinimumSize(QSize(60, 60))
+        self.pbCE.setMaximumSize(QSize(60, 60))
+        self.pbCE.setFont(font3)
+
+        self.gridLayout.addWidget(self.pbCE, 0, 3, 1, 1)
+
         self.gridLayout.setColumnStretch(0, 1)
         self.gridLayout.setColumnStretch(1, 1)
         self.gridLayout.setColumnStretch(2, 1)
@@ -266,21 +297,25 @@ class Ui_MainWindow(object):
         self.menuAboutDeveloper.setText(QCoreApplication.translate("MainWindow", u"About Developer", None))
         self.menuWebsite.setText(QCoreApplication.translate("MainWindow", u"Website", None))
         self.pb7.setText(QCoreApplication.translate("MainWindow", u"7", None))
-        self.pb3.setText(QCoreApplication.translate("MainWindow", u"3", None))
-        self.pb6.setText(QCoreApplication.translate("MainWindow", u"6", None))
-        self.pb5.setText(QCoreApplication.translate("MainWindow", u"5", None))
-        self.pb1.setText(QCoreApplication.translate("MainWindow", u"1", None))
-        self.pbDivide.setText(QCoreApplication.translate("MainWindow", u"/", None))
-        self.pb2.setText(QCoreApplication.translate("MainWindow", u"2", None))
-        self.pb9.setText(QCoreApplication.translate("MainWindow", u"9", None))
-        self.pb8.setText(QCoreApplication.translate("MainWindow", u"8", None))
-        self.pbSubtract.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.pb4.setText(QCoreApplication.translate("MainWindow", u"4", None))
-        self.pbMultiply.setText(QCoreApplication.translate("MainWindow", u"*", None))
-        self.pb0.setText(QCoreApplication.translate("MainWindow", u"0", None))
-        self.pbDot.setText(QCoreApplication.translate("MainWindow", u".", None))
-        self.pbEqual.setText(QCoreApplication.translate("MainWindow", u"=", None))
         self.pbAdd.setText(QCoreApplication.translate("MainWindow", u"+", None))
+        self.pb6.setText(QCoreApplication.translate("MainWindow", u"6", None))
+        self.pbDot.setText(QCoreApplication.translate("MainWindow", u".", None))
+        self.pb0.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.pb5.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.pb8.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.pb3.setText(QCoreApplication.translate("MainWindow", u"3", None))
+        self.pbEqual.setText(QCoreApplication.translate("MainWindow", u"=", None))
+        self.pbC.setText(QCoreApplication.translate("MainWindow", u"C", None))
+        self.pb9.setText(QCoreApplication.translate("MainWindow", u"9", None))
+        self.pb2.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.pbDivide.setText(QCoreApplication.translate("MainWindow", u"\u00f7", None))
+        self.pbMultiply.setText(QCoreApplication.translate("MainWindow", u"x", None))
+        self.pb1.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.pbSubtract.setText(QCoreApplication.translate("MainWindow", u"-", None))
+        self.pbBackspace.setText(QCoreApplication.translate("MainWindow", u"\u2190", None))
+        self.pbPercent.setText(QCoreApplication.translate("MainWindow", u"%", None))
+        self.pbCE.setText(QCoreApplication.translate("MainWindow", u"CE", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
         self.menuEdit.setTitle(QCoreApplication.translate("MainWindow", u"Edit", None))
         self.menuView.setTitle(QCoreApplication.translate("MainWindow", u"View", None))
