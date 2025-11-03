@@ -48,8 +48,8 @@ class Ui_MainWindow(object):
         self.menuAboutApp.setObjectName(u"menuAboutApp")
         self.menuAboutDeveloper = QAction(MainWindow)
         self.menuAboutDeveloper.setObjectName(u"menuAboutDeveloper")
-        self.menuWebsite = QAction(MainWindow)
-        self.menuWebsite.setObjectName(u"menuWebsite")
+        self.menuVisitWebsite = QAction(MainWindow)
+        self.menuVisitWebsite.setObjectName(u"menuVisitWebsite")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setMaximumSize(QSize(265, 396))
@@ -279,7 +279,7 @@ class Ui_MainWindow(object):
         self.menuView.addAction(self.menuScientificMode)
         self.menuHelp.addAction(self.menuAboutApp)
         self.menuHelp.addAction(self.menuAboutDeveloper)
-        self.menuHelp.addAction(self.menuWebsite)
+        self.menuHelp.addAction(self.menuVisitWebsite)
 
         self.retranslateUi(MainWindow)
 
@@ -295,7 +295,7 @@ class Ui_MainWindow(object):
         self.menuScientificMode.setText(QCoreApplication.translate("MainWindow", u"Scientific Mode", None))
         self.menuAboutApp.setText(QCoreApplication.translate("MainWindow", u"About App", None))
         self.menuAboutDeveloper.setText(QCoreApplication.translate("MainWindow", u"About Developer", None))
-        self.menuWebsite.setText(QCoreApplication.translate("MainWindow", u"Website", None))
+        self.menuVisitWebsite.setText(QCoreApplication.translate("MainWindow", u"Visit Website", None))
         self.pb7.setText(QCoreApplication.translate("MainWindow", u"7", None))
         self.pb4.setText(QCoreApplication.translate("MainWindow", u"4", None))
         self.pbAdd.setText(QCoreApplication.translate("MainWindow", u"+", None))

@@ -638,7 +638,7 @@
     </property>
     <addaction name="menuAboutApp"/>
     <addaction name="menuAboutDeveloper"/>
-    <addaction name="menuWebsite"/>
+    <addaction name="menuVisitWebsite"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -684,9 +684,9 @@
     <string>About Developer</string>
    </property>
   </action>
-  <action name="menuWebsite">
+  <action name="menuVisitWebsite">
    <property name="text">
-    <string>Website</string>
+    <string>Visit Website</string>
    </property>
   </action>
  </widget>
