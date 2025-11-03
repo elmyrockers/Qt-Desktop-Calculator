@@ -1,7 +1,6 @@
 # Qt-Desktop-Calculator
 Simple Qt-based desktop calculator made with PySide6 (Qt for Python).
 
----
 
 ## Features
 - Basic arithmetic operations: addition, subtraction, multiplication, division  
@@ -9,12 +8,11 @@ Simple Qt-based desktop calculator made with PySide6 (Qt for Python).
 - Responsive layout using QGridLayout  
 - Lightweight and cross-platform
 
----
 
 ## Technologies Used
 - Python 3
 - PySide6 (Qt for Python)
---
+
 
 ## Preview
 <table>
@@ -27,13 +25,13 @@ Simple Qt-based desktop calculator made with PySide6 (Qt for Python).
 		<td colspan="3"><img src="demo/demo4.jpg" alt="Calculator Demo 4" width="500"></td>
 	</tr>
 </table>
---
+
 
 ## Purpose
 This project was developed as part of my personal portfolio to demonstrate skills in:
 - GUI development using Qt Widgets
 - Event-driven programming in Python
---
+
 
 ## Notice
 This project is for **portfolio showcase purposes only** and not intended for reuse or redistribution.
