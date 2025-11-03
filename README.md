@@ -24,7 +24,7 @@ Simple Qt-based desktop calculator made with PySide6 (Qt for Python).
 		<td><img src="demo/demo3.jpg" alt="Calculator Demo 3" width="150"></td>
 	</tr>
 	<tr>
-		<td colspan="3"><img src="demo/demo4.jpg" alt="Calculator Demo 4" width="300"></td>
+		<td colspan="3"><img src="demo/demo4.jpg" alt="Calculator Demo 4" width="500"></td>
 	</tr>
 </table>
 --
