@@ -74,11 +74,11 @@ class Calculator(QMainWindow):
         self.ui.menuPaste.triggered.connect(self.paste_text)
 
         # View -> Standard, Scientific Mode
-        self.ui.menuStandard.triggered.connect(lambda: self.show_message("Standard Mode"))
-        self.ui.menuScientificMode.triggered.connect(lambda: self.show_message("Scientific Mode"))
+        self.ui.menuStandard.triggered.connect(lambda: self.show_message( "View","Standard Mode"))
+        self.ui.menuScientificMode.triggered.connect(lambda: self.show_message( "View","Scientific Mode"))
 
         # Help -> About
-        self.ui.menuAboutApp.triggered.connect(lambda: self.show_message("Qt Desktop Calculator v1.0"))
+        self.ui.menuAboutApp.triggered.connect(lambda: self.show_message( "About App","Qt Desktop Calculator v1.0"))
         self.ui.menuAboutDeveloper.triggered.connect(self.show_about_developer)
         self.ui.menuVisitWebsite.triggered.connect(self.open_website)
 
@@ -92,8 +92,8 @@ class Calculator(QMainWindow):
         text = clipboard.text()
         self.update_display(text)
 
-    def show_message(self, message):
-        QMessageBox.information(self, "Information", message)
+    def show_message(self, title, message):
+        QMessageBox.information(self, title, message)
 
     def show_about_developer(self):
         msg = QMessageBox(self)
