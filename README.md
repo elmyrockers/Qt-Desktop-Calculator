@@ -1,6 +1,5 @@
 # Qt-Desktop-Calculator
 Simple Qt-based desktop calculator made with PySide6 (Qt for Python).
-This project is part of my Qt Desktop Portfolio.
 
 ---
 
