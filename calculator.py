@@ -1,3 +1,5 @@
+from PySide6.QtGui import QDesktopServices
+from PySide6.QtCore import QUrl
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QMainWindow, QMessageBox, QApplication
 from calculator_ui import Ui_MainWindow  # your generated UI
@@ -78,7 +80,7 @@ class Calculator(QMainWindow):
         # Help -> About
         self.ui.menuAboutApp.triggered.connect(lambda: self.show_message("Qt Desktop Calculator v1.0"))
         self.ui.menuAboutDeveloper.triggered.connect(self.show_about_developer)
-        self.ui.menuWebsite.triggered.connect(lambda: self.show_message("Website: https://elmyrockers.github.io"))
+        self.ui.menuVisitWebsite.triggered.connect(self.open_website)
 
     # Menu actions
     def copy_text(self):
@@ -110,3 +112,7 @@ class Calculator(QMainWindow):
         msg.setTextFormat(Qt.RichText)
         msg.setText(html_content)
         msg.exec()
+
+    def open_website(self):
+        url = "https://elmyrockers.github.io"
+        QDesktopServices.openUrl(QUrl(url))
