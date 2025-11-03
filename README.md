@@ -18,6 +18,10 @@ Simple Qt-based desktop calculator made with PySide6 (Qt for Python).
 ---
 
 ## Preview
+![Demo 1](demo/demo1.jpg)
+![Demo 2](demo/demo2.jpg)
+![Demo 3](demo/demo3.jpg)
+![Demo 4](demo/demo4.jpg)
 
 ---
 
